@@ -64,8 +64,8 @@ const [text1, setText1] = useState('');
     <View style={styles.container}>
       <Image source={require('../../src/Img/logo.jpg')} style={styles.logo}  />
       <Text style={styles.title} >Login</Text>
-      <TextInput placeholder="Enter text"  onChangeText={setText1}   style={styles.input}  value={text1}/>
-      <TextInput placeholder="Enter text"  onChangeText={setText2}   style={styles.input} value={text2}/>
+      <TextInput placeholder="Email"  onChangeText={setText1}   style={styles.input}  value={text1}  />
+      <TextInput placeholder="Password"  onChangeText={setText2}   style={styles.input} value={text2} />
       <Button title="Login" onPress={profile}  color="#fd0000ff" />
     </View>
  
