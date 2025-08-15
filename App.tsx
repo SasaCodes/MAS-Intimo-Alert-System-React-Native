@@ -28,8 +28,6 @@ export default function App() {
         <Stack.Screen name="NewsEditScreen" component={NewsEditScreen} />
       </Stack.Navigator>
     </NavigationContainer>
-
-
   );
 }
 

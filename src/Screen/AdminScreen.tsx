@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { View, Text, Button, TextInput, StyleSheet ,Alert } from 'react-native';
+import { View, Text, Button, TextInput, StyleSheet ,Alert ,SafeAreaView} from 'react-native';
 import { enableScreens } from 'react-native-screens';
 
 const Stack = createNativeStackNavigator();
@@ -9,13 +9,13 @@ enableScreens();
 
 const AdminScreen = ({ navigation }: any) => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={styles.container}>
       <Text style={styles.title}>Admin Control Panel</Text>
       <View style={styles.containerButton1}><Button title="Add News " onPress={() => navigation.navigate('NewsScreen')} /></View>
-      
-        <Button title="News View" onPress={() => navigation.navigate('NewsViewScreen')} />
-
+      <Button title="News View" onPress={() => navigation.navigate('NewsViewScreen')} />
     </View>
+    </SafeAreaView>
   )
 }
 const styles = StyleSheet.create({
